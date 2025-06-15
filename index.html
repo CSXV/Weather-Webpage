@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Weather-Webpage/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Today weather report</title>
+    <script type="module" crossorigin src="/Weather-Webpage/assets/index-Bgg5VQKM.js"></script>
+    <link rel="stylesheet" crossorigin href="/Weather-Webpage/assets/index-hljyj1xJ.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <header id="header-container">
+        <section id="input-section">
+          <input
+            type="text"
+            name="OfficeID"
+            value="OKX"
+            placeholder="Enter Office ID, Try: OKX, BGM"
+            id="OfficeId-input"
+          />
+          <input
+            type="text"
+            name="GridX"
+            value="35"
+            placeholder="Enter X Grid, try 35"
+            id="GridX-input"
+          />
+          <input
+            type="text"
+            name="GridY"
+            value="35"
+            placeholder="Enter Y Grid, try 35"
+            id="GridY-input"
+          />
+        </section>
+      </header>
+
+      <div id="main-container">
+        <div id="hero-container">
+          <!-- TODAY -->
+          <section id="today-container">
+            <div>
+              <h1 id="today-header">Today</h1>
+
+              <p class="light-text" id="today-forecast"></p>
+              <h2 id="today-temps"></h2>
+            </div>
+
+            <p class="weather-icon" id="today-icon"></p>
+          </section>
+
+          <div id="hero-air-container">
+            <!-- TODAY FORECAST -->
+            <section id="todays-forecast-container">
+              <p class="light-text">Today's forecast</p>
+
+              <div id="todays-container">
+                <div class="todays" id="todays-container-1">
+                  <p class="light-text" id="todays-header-1">12:00</p>
+                  <p class="weather-icon" id="todays-icon-1"></p>
+
+                  <h4 id="todays-temp-1"></h4>
+                </div>
+
+                <div class="todays" id="todays-container-2">
+                  <p class="light-text" id="todays-header-2">01:00</p>
+                  <p class="weather-icon" id="todays-icon-2"></p>
+
+                  <h4 id="todays-temp-2"></h4>
+                </div>
+
+                <div class="todays" id="todays-container-3">
+                  <p class="light-text" id="todays-header-3">02:00</p>
+                  <p class="weather-icon" id="todays-icon-3"></p>
+
+                  <h4 id="todays-temp-3"></h4>
+                </div>
+
+                <div class="todays" id="todays-container-4">
+                  <p class="light-text" id="todays-header-4">03:00</p>
+                  <p class="weather-icon" id="todays-icon-4"></p>
+
+                  <h4 id="todays-temp-4"></h4>
+                </div>
+
+                <div class="todays" id="todays-container-5">
+                  <p class="light-text" id="todays-header-5">04:00</p>
+                  <p class="weather-icon" id="todays-icon-5"></p>
+
+                  <h4 id="todays-temp-5"></h4>
+                </div>
+
+                <div class="todays" id="todays-container-6">
+                  <p class="light-text" id="todays-header-6">05:00</p>
+                  <p class="weather-icon" id="todays-icon-6"></p>
+
+                  <h4 id="todays-temp-6"></h4>
+                </div>
+              </div>
+            </section>
+
+            <!-- AIR -->
+            <section id="air-container">
+              <p class="light-text">Air condition</p>
+
+              <div id="air-info">
+                <div id="wind-container">
+                  <p class="light-text"><i class="nf nf-fa-wind"></i> Wind</p>
+                  <h4 id="today-wind-Speed"></h4>
+
+                  <div id="wind-direction-container">
+                    <p id="wind-icon" class="nf nf-weather-wind_direction"></p>
+                    <p id="today-wind-Direction"></p>
+                  </div>
+                  <!-- <p id="today-wind"></p> -->
+                </div>
+
+                <div id="precipitation-container">
+                  <p class="light-text">
+                    <i class="nf nf-md-water"></i> Chance of rain
+                  </p>
+
+                  <h4 id="today-precipitation"></h4>
+                </div>
+
+                <div id="humidity-container">
+                  <p class="light-text">
+                    <i class="nf nf-weather-humidity"></i> Humidity
+                  </p>
+
+                  <h4 id="today-humidity">0</h4>
+                </div>
+
+                <div id="DewPoint-container">
+                  <p class="light-text">
+                    <i class="nf nf-md-coolant_temperature"></i> Dew point
+                  </p>
+
+                  <h4 id="today-DewPoint">0</h4>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- WEATHER -->
+        <section id="weather-container">
+          <p class="light-text">6-Day forecast</p>
+
+          <div id="weather-info">
+            <div class="days" id="tomorrow-container">
+              <p class="light-text" id="tomorrow-header">tomorrow</p>
+              <p class="weather-icon" id="tomorrow-icon"></p>
+
+              <h4 id="tomorrow-temps"></h4>
+              <p class="weather-info-forecast" id="tomorrow-forecast"></p>
+            </div>
+
+            <div class="days" id="next-tomorrow-container">
+              <p class="light-text" id="next-tomorrow-header">next tomorrow</p>
+              <p class="weather-icon" id="next-tomorrow-icon"></p>
+
+              <h4 id="next-tomorrow-temps"></h4>
+              <p class="weather-info-forecast" id="next-tomorrow-forecast"></p>
+            </div>
+
+            <div class="days" id="fourth-container">
+              <p class="light-text" id="fourth-header">Fourth Day</p>
+              <p class="weather-icon" id="fourth-icon"></p>
+
+              <h4 id="fourth-temps"></h4>
+              <p class="weather-info-forecast" id="fourth-forecast"></p>
+            </div>
+
+            <div class="days" id="fifth-container">
+              <p class="light-text" id="fifth-header">Fifth Day</p>
+              <p class="weather-icon" id="fifth-icon"></p>
+
+              <h4 id="fifth-temps"></h4>
+              <p class="weather-info-forecast" id="fifth-forecast"></p>
+            </div>
+
+            <div class="days" id="sixth-container">
+              <p class="light-text" id="sixth-header">sixth day</p>
+              <p class="weather-icon" id="sixth-icon"></p>
+
+              <h4 id="sixth-temps"></h4>
+              <p class="weather-info-forecast" id="sixth-forecast"></p>
+            </div>
+
+            <div class="days" id="seventh-container">
+              <p class="light-text" id="seventh-header">seventh day</p>
+              <p class="weather-icon" id="seventh-icon"></p>
+
+              <h4 id="seventh-temps"></h4>
+              <p class="weather-info-forecast" id="seventh-forecast"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p>
+          Made with love using <i class="nf nf-dev-vim"></i> and
+          <i class="nf nf-md-arch"></i> |
+          <a href="https://www.github.com/csxv">CSXV</a>
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>
