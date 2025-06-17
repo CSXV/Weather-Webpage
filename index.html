@@ -13,8 +13,8 @@
     />
 
     <title>Today weather report</title>
-    <script type="module" crossorigin src="/Weather-Webpage/assets/index-Bgg5VQKM.js"></script>
-    <link rel="stylesheet" crossorigin href="/Weather-Webpage/assets/index-hljyj1xJ.css">
+    <script type="module" crossorigin src="/Weather-Webpage/assets/index-BQLpB8b4.js"></script>
+    <link rel="stylesheet" crossorigin href="/Weather-Webpage/assets/index-B4VpOQ-B.css">
   </head>
 
   <body>
@@ -49,14 +49,17 @@
         <div id="hero-container">
           <!-- TODAY -->
           <section id="today-container">
-            <div>
-              <h1 id="today-header">Today</h1>
+            <div id="today-div-container">
+              <h1 class="DaysText" id="today-header">Today</h1>
 
-              <p class="light-text" id="today-forecast"></p>
-              <h2 id="today-temps"></h2>
+              <p
+                class="weather-info-forecast light-text"
+                id="today-forecast"
+              ></p>
+              <h2 class="DaysTemps" id="today-temps"></h2>
             </div>
 
-            <p class="weather-icon" id="today-icon"></p>
+            <p class="DaysIcons weather-icon" id="today-icon"></p>
           </section>
 
           <div id="hero-air-container">
@@ -66,45 +69,57 @@
 
               <div id="todays-container">
                 <div class="todays" id="todays-container-1">
-                  <p class="light-text" id="todays-header-1">12:00</p>
-                  <p class="weather-icon" id="todays-icon-1"></p>
+                  <p class="HourlyText light-text" id="todays-header-1">
+                    12:00
+                  </p>
+                  <p class="HourlyIcon weather-icon" id="todays-icon-1"></p>
 
-                  <h4 id="todays-temp-1"></h4>
+                  <h4 class="HourlyTemps" id="todays-temp-1"></h4>
                 </div>
 
                 <div class="todays" id="todays-container-2">
-                  <p class="light-text" id="todays-header-2">01:00</p>
-                  <p class="weather-icon" id="todays-icon-2"></p>
+                  <p class="HourlyText light-text" id="todays-header-2">
+                    01:00
+                  </p>
+                  <p class="HourlyIcon weather-icon" id="todays-icon-2"></p>
 
-                  <h4 id="todays-temp-2"></h4>
+                  <h4 class="HourlyTemps" id="todays-temp-2"></h4>
                 </div>
 
                 <div class="todays" id="todays-container-3">
-                  <p class="light-text" id="todays-header-3">02:00</p>
-                  <p class="weather-icon" id="todays-icon-3"></p>
+                  <p class="HourlyText light-text" id="todays-header-3">
+                    02:00
+                  </p>
+                  <p class="HourlyIcon weather-icon" id="todays-icon-3"></p>
 
-                  <h4 id="todays-temp-3"></h4>
+                  <h4 class="HourlyTemps" id="todays-temp-3"></h4>
                 </div>
 
                 <div class="todays" id="todays-container-4">
-                  <p class="light-text" id="todays-header-4">03:00</p>
-                  <p class="weather-icon" id="todays-icon-4"></p>
+                  <p class="HourlyText light-text" id="todays-header-4">
+                    03:00
+                  </p>
+                  <p class="HourlyIcon weather-icon" id="todays-icon-4"></p>
 
-                  <h4 id="todays-temp-4"></h4>
+                  <h4 class="HourlyTemps" id="todays-temp-4"></h4>
                 </div>
 
                 <div class="todays" id="todays-container-5">
-                  <p class="light-text" id="todays-header-5">04:00</p>
-                  <p class="weather-icon" id="todays-icon-5"></p>
+                  <p class="HourlyText light-text" id="todays-header-5">
+                    04:00
+                  </p>
+                  <p class="HourlyIcon weather-icon" id="todays-icon-5"></p>
 
-                  <h4 id="todays-temp-5"></h4>
+                  <h4 class="HourlyTemps" id="todays-temp-5"></h4>
                 </div>
 
                 <div class="todays" id="todays-container-6">
-                  <p class="light-text" id="todays-header-6">05:00</p>
-                  <p class="weather-icon" id="todays-icon-6"></p>
+                  <p class="HourlyText light-text" id="todays-header-6">
+                    05:00
+                  </p>
+                  <p class="HourlyIcon weather-icon" id="todays-icon-6"></p>
 
-                  <h4 id="todays-temp-6"></h4>
+                  <h4 class="HourlyTemps" id="todays-temp-6"></h4>
                 </div>
               </div>
             </section>
@@ -159,51 +174,61 @@
 
           <div id="weather-info">
             <div class="days" id="tomorrow-container">
-              <p class="light-text" id="tomorrow-header">tomorrow</p>
-              <p class="weather-icon" id="tomorrow-icon"></p>
+              <p class="DaysText light-text" id="tomorrow-header">tomorrow</p>
+              <p class="DaysIcons weather-icon" id="tomorrow-icon"></p>
 
-              <h4 id="tomorrow-temps"></h4>
-              <p class="weather-info-forecast" id="tomorrow-forecast"></p>
+              <h4 class="DaysTemps" id="tomorrow-temps"></h4>
+              <p
+                class="weather-info-forecast"
+                id="tomorrow-forecast"
+                hidden
+              ></p>
             </div>
 
             <div class="days" id="next-tomorrow-container">
-              <p class="light-text" id="next-tomorrow-header">next tomorrow</p>
-              <p class="weather-icon" id="next-tomorrow-icon"></p>
+              <p class="DaysText light-text" id="next-tomorrow-header">
+                next tomorrow
+              </p>
+              <p class="DaysIcons weather-icon" id="next-tomorrow-icon"></p>
 
-              <h4 id="next-tomorrow-temps"></h4>
-              <p class="weather-info-forecast" id="next-tomorrow-forecast"></p>
+              <h4 class="DaysTemps" id="next-tomorrow-temps"></h4>
+              <p
+                class="weather-info-forecast"
+                id="next-tomorrow-forecast"
+                hidden
+              ></p>
             </div>
 
             <div class="days" id="fourth-container">
-              <p class="light-text" id="fourth-header">Fourth Day</p>
-              <p class="weather-icon" id="fourth-icon"></p>
+              <p class="DaysText light-text" id="fourth-header">Fourth Day</p>
+              <p class="DaysIcons weather-icon" id="fourth-icon"></p>
 
-              <h4 id="fourth-temps"></h4>
-              <p class="weather-info-forecast" id="fourth-forecast"></p>
+              <h4 class="DaysTemps" id="fourth-temps"></h4>
+              <p class="weather-info-forecast" id="fourth-forecast" hidden></p>
             </div>
 
             <div class="days" id="fifth-container">
-              <p class="light-text" id="fifth-header">Fifth Day</p>
-              <p class="weather-icon" id="fifth-icon"></p>
+              <p class="DaysText light-text" id="fifth-header">Fifth Day</p>
+              <p class="DaysIcons weather-icon" id="fifth-icon"></p>
 
-              <h4 id="fifth-temps"></h4>
-              <p class="weather-info-forecast" id="fifth-forecast"></p>
+              <h4 class="DaysTemps" id="fifth-temps"></h4>
+              <p class="weather-info-forecast" id="fifth-forecast" hidden></p>
             </div>
 
             <div class="days" id="sixth-container">
-              <p class="light-text" id="sixth-header">sixth day</p>
-              <p class="weather-icon" id="sixth-icon"></p>
+              <p class="DaysText light-text" id="sixth-header">sixth day</p>
+              <p class="DaysIcons weather-icon" id="sixth-icon"></p>
 
-              <h4 id="sixth-temps"></h4>
-              <p class="weather-info-forecast" id="sixth-forecast"></p>
+              <h4 class="DaysTemps" id="sixth-temps"></h4>
+              <p class="weather-info-forecast" id="sixth-forecast" hidden></p>
             </div>
 
             <div class="days" id="seventh-container">
-              <p class="light-text" id="seventh-header">seventh day</p>
-              <p class="weather-icon" id="seventh-icon"></p>
+              <p class="DaysText light-text" id="seventh-header">seventh day</p>
+              <p class="DaysIcons weather-icon" id="seventh-icon"></p>
 
-              <h4 id="seventh-temps"></h4>
-              <p class="weather-info-forecast" id="seventh-forecast"></p>
+              <h4 class="DaysTemps" id="seventh-temps"></h4>
+              <p class="weather-info-forecast" id="seventh-forecast" hidden></p>
             </div>
           </div>
         </section>
